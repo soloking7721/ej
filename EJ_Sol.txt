@@ -1,0 +1,1504 @@
+# Java EE Practical Guide — Servlet, JSP, JDBC, EJB, JPA
+
+**Tools:** NetBeans 8.0 (Java EE bundle) + GlassFish Server 4.0 + JDK 7/8 + MySQL (XAMPP)
+**Rule:** Har question ke liye ek naya project banao. Code copy karke paste karo, `Run File` karo.
+
+---
+
+## Exact Practical Questions (Ctrl+F Search Index)
+
+Use the full question wording below with **Ctrl+F**. The practical code sections currently present in this guide are listed later in Part A. This index includes all questions supplied for Q.1 and Q.2 so the wording is searchable even when a code solution is not included in the uploaded source file.
+
+### Q.1 — Unique Questions
+
+#### A. Servlets
+1. Create a simple calculator application using a Servlet.
+2. Develop a basic calculator using ServletInputStream and ServletOutputStream to perform addition, subtraction, multiplication, division and modulus.
+3. Create a Servlet-based login page that displays “Hello” or “Hello [username]” for valid credentials and “login failed” for invalid credentials.
+4. Create a Servlet-based login application for an online examination portal.
+5. Create a registration Servlet using JDBC to accept username, password, email and country from an HTML form and store the details in a database.
+6. Create a Servlet using RequestDispatcher to validate a password and forward the user to a Welcome Servlet when valid; otherwise, display an error or remain on the index page.
+7. Create a Servlet that uses cookies to store and display the number of times a user has visited the application.
+8. Create a Servlet that demonstrates session creation and destruction and checks whether the user is visiting for the first time or has visited previously.
+9. Create a Servlet application to upload and download files.
+10. Create a Servlet application demonstrating non-blocking read operations.
+11. Develop a Servlet-based question-and-answer application that retrieves questions from a database.
+12. Develop a web-based multiple-choice quiz with at least five questions, four options per question and one selectable answer per question. Display the number of correct and incorrect answers after submission.
+13. Create a Servlet application that accepts two numbers and an arithmetic operation from an HTML form, calculates the result and displays it.
+14. Create a Servlet application demonstrating simple input validation.
+15. Create a simple HTML form that submits a user's name to a Servlet and displays a welcome message containing the name.
+16. Create a Servlet application for a stationery shop that accepts the prices of two items and displays their sum, difference, product and division.
+17. Create a Servlet application for a canteen that accepts the prices of two food items and displays their total cost.
+18. Create a Servlet application for a college admission portal that validates an application and uses RequestDispatcher to forward it to a confirmation page.
+19. Create a Servlet application for a bookshop that accepts customer details and stores them in a database using JDBC.
+20. Create a Servlet application for a parcel-tracking system that uses sessions to store and display customer tracking details.
+21. Create a Servlet-based online test portal that stores student details in sessions and displays them on another page.
+22. Create a Servlet application for a shopping website that uses cookies to remember a visitor's name on subsequent visits.
+23. Create a Servlet application that calculates a water bill based on units consumed.
+24. Create a Servlet application for a college notice board that allows an administrator to upload PDF notices and students to download them.
+25. Create a Servlet application for a library that accepts book details and displays the submitted information on a separate page.
+26. Create a Servlet application for a college event that uses RequestDispatcher to forward a valid registration to a confirmation page.
+
+#### B. JSP, JDBC and web forms
+27. Develop a JSP application to display values obtained from different implicit objects.
+28. Create a JSP application demonstrating at least three methods of four implicit objects.
+29. Create a JSP application demonstrating Expression Language (EL).
+30. Create a JSP application demonstrating JSTL.
+31. Develop a JSP application demonstrating JSP Action Tags.
+32. Develop a JSP application that passes values from one page to another and validates name, age, hobbies, email and gender.
+33. Create a JSP page that accepts employee number, employee name and salary, then inserts the record into an emp database table.
+34. Create an HTML form with employee number, name, age, designation and salary; submit the data to a JSP page that updates the matching employee record.
+35. Develop a JSP application to authenticate a user's login against a database.
+36. Create a JSP and JDBC gym membership portal that allows users to register and log in using database records.
+37. Create a JSP-based event registration form that accepts name, email, age and contact number, validates the input and displays the submitted details.
+38. Create a registration and login JSP application to register users and authenticate their credentials.
+39. Develop a five-page web application using any two or three Java EE technologies.
+40. Develop a Servlet application for a bakery that accepts cake quantity and price and calculates the total bill.
+41. Create a Servlet application for a mobile shop that accepts mobile price and discount percentage and calculates the final price.
+42. Develop a Servlet application for a hostel registration portal that stores student details in a session and displays them on a confirmation page.
+43. Create a JSP application using EL to display flight booking details, including passenger name, flight number, destination and ticket price.
+44. Create a JSP application using EL to display student examination details, including roll number, name, subject and marks.
+45. Create a JSP application using EL to display employee details received from another page, including employee ID, name, department and designation.
+46. Create a JSP application using EL to display product details received from another page, including product ID, name, quantity and price.
+47. Create a JSP application using JSTL to display a list of available books with titles, authors and prices.
+
+### Q.2 — Unique Questions
+
+#### A. EJB applications
+1. Create a currency converter using EJB to convert Indian Rupees into US Dollars, Euros and British Pounds.
+2. Develop a visitor hit-count application using a Singleton Session Bean.
+3. Develop a visitor statistics application using a Message-Driven Bean and Stateless Session Bean.
+4. Develop a Marks Entry application using EJB to accept student details and marks, store them in a database, and retrieve and display the records.
+5. Develop a room reservation system using EJB.
+6. Develop a shopping cart application using a Stateful Session Bean.
+7. Develop an electricity bill calculator using EJB that calculates the bill from units consumed.
+8. Develop a temperature converter using EJB to convert Celsius to Fahrenheit.
+9. Develop an EJB-based hotel room reservation application that accepts guest details, room type, check-in date and number of nights.
+10. Develop an EJB-based shopping bill calculator that accepts product price and quantity and calculates the total amount.
+11. Develop an EJB-based salary calculator that accepts basic salary and allowances and calculates gross salary.
+12. Create a Stateful Session Bean for a restaurant ordering system that allows customers to add and remove food items and calculate the total bill.
+
+#### B. JPA applications
+13. Create a JPA application to store and retrieve book details.
+14. Create a JPA inventory application.
+15. Create a JPA guestbook application to store and retrieve visitor details and comments.
+16. Create a JPA application demonstrating ORM associations.
+17. Create a JPA application to store employee names and salaries.
+18. Create a JPA application to store course details and demonstrate ORM mapping.
+19. Create a JPA application to store product names and quantities.
+20. Create a JPA application demonstrating One-to-One mapping.
+21. Create a JPA application to store student names and roll numbers.
+22. Create a JPA application to store student names and marks.
+23. Create a JPA application to store book names and prices.
+24. Create a JPA-based student management system to insert, display and update student details.
+25. Create a JPA-based employee management system to insert, display and update employee details.
+26. Create a JPA-based grocery store application to insert and display product ID, name, quantity and price.
+27. Create a JPA-based student result system to store student roll number, name, subject and marks.
+28. Create a JPA-based mobile shop application to insert, display and update mobile phone details.
+29. Create a JPA-based vehicle showroom application to insert and display vehicle ID, model name and price.
+30. Create a JPA-based bookshop application to insert and display book details.
+
+---
+
+## 0. One-time Setup
+
+### 0.1 Naya Web Project (Servlet / JSP / EJB ke liye)
+1. `File → New Project → Java Web → Web Application → Next`
+2. **Project Name** likho (har question me diya hai) → `Next`
+3. **Server:** `GlassFish Server 4.0`, **Java EE Version:** `Java EE 7 Web` → `Finish`
+
+### 0.2 Servlet kaise banaye
+1. Projects tab → `Source Packages` pe right-click → `New → Servlet`
+2. **Class Name** likho, **Package** = `p1` → `Next`
+3. **"Add information to deployment descriptor (web.xml)" ko UNCHECK karo** → `Finish`
+4. Pura generated code delete karo aur meri code paste karo (`@WebServlet` annotation se URL ban jata hai, web.xml nahi chahiye)
+
+### 0.3 HTML / JSP file kaise banaye
+`Web Pages` pe right-click → `New → HTML` (ya `JSP`) → File Name likho → `Finish`.
+Naye project me `index.html` pehle se hota hai, usko edit karo (delete mat karo).
+
+### 0.4 Run kaise kare
+- Servlet: file pe right-click → `Run File` (Shift+F6). Agar "Set Servlet Execution URI" pooche to servlet ka URL (jaise `/CalcServlet`) likho.
+- HTML/JSP: file pe right-click → `Run File`.
+- URL format: `http://localhost:8080/<ProjectName>/<URLpattern>`
+
+### 0.5 MySQL (sirf JDBC wale questions ke liye)
+1. XAMPP Control Panel → MySQL **Start**
+2. Browser: `http://localhost/phpmyadmin` → `SQL` tab → neeche wala script run karo
+3. NetBeans project me driver add karo: Projects → project → `Libraries` pe right-click → `Add Library → MySQL JDBC Driver → Add Library`
+4. Code me connection: `jdbc:mysql://localhost:3306/exam`, user `root`, password `""` (agar aapke MySQL ka password hai to code me change karo)
+
+```sql
+CREATE DATABASE IF NOT EXISTS exam;
+USE exam;
+CREATE TABLE users(username VARCHAR(30), password VARCHAR(30), email VARCHAR(50), country VARCHAR(30));
+INSERT INTO users(username,password) VALUES('admin','admin123');
+CREATE TABLE customers(cname VARCHAR(30), address VARCHAR(50), phone VARCHAR(15), bookname VARCHAR(50));
+CREATE TABLE qa(qid INT PRIMARY KEY, question VARCHAR(200), answer VARCHAR(50));
+INSERT INTO qa VALUES(1,'Capital of India?','Delhi'),(2,'Java was developed by?','Sun'),(3,'Full form of JSP?','Java Server Pages');
+CREATE TABLE emp(eno INT PRIMARY KEY, ename VARCHAR(30), age INT, designation VARCHAR(30), salary DOUBLE);
+INSERT INTO emp VALUES(1,'Ravi',25,'Clerk',20000);
+CREATE TABLE members(name VARCHAR(30), email VARCHAR(50), password VARCHAR(30), plan VARCHAR(20));
+CREATE TABLE marks(roll INT PRIMARY KEY, name VARCHAR(30), marks INT);
+```
+(JPA wale questions apna database `jpa` aur tables khud bana lete hain — uska setup Part D me hai.)
+
+
+### 0.7 Exact steps and file paths for each practical
+
+Follow these steps for each practical section below. The **Project** and **File** lines under each question give the exact project/file names for that practical.
+
+1. **Create the project**
+   - Path: `File → New Project → Java Web → Web Application → Next`
+   - Enter the project name shown under the question → `Next`.
+   - Select `GlassFish Server 4.0` and `Java EE 7 Web` → `Finish`.
+2. **Create the package**
+   - Path: `Projects → <Your Project> → Source Packages`
+   - Right-click `Source Packages → New → Java Package` → package name: `p1` → `Finish`.
+3. **Create each Servlet file**
+   - Path: `Source Packages → p1`
+   - Right-click `p1 → New → Servlet`; enter the exact class name shown in the question's file path.
+   - If the wizard asks about `web.xml`, leave **Add information to deployment descriptor (web.xml)** unchecked when the code uses `@WebServlet` → `Finish`.
+   - Replace the generated class with the complete code in this guide and save.
+4. **Create each HTML/JSP page**
+   - Path: `Web Pages`
+   - Right-click `Web Pages → New → HTML` or `New → JSP`; enter the exact filename shown in the question's file list → `Finish`.
+   - Paste the matching page code and save. If `index.html` already exists, edit it rather than creating a duplicate.
+5. **Run**
+   - For an HTML/JSP starting page: right-click that file under `Web Pages → Run File`.
+   - For a Servlet-only form: right-click the Servlet under `Source Packages → p1 → Run File`; if NetBeans asks for a Servlet execution URI, use the URL pattern shown in `@WebServlet`.
+   - URL pattern: `http://localhost:8080/<ProjectName>/<ServletURLPattern>`.
+6. **For JDBC questions only**
+   - Start MySQL in XAMPP, run the database/table SQL in section 0.5 using phpMyAdmin, and add `MySQL JDBC Driver` through `Project → Libraries → Add Library`.
+7. **For multi-file practicals**
+   - Create every listed file at its specified path before running the HTML/JSP starting page.
+
+**Important:** The Java/HTML/SQL code in the existing practical sections has been kept unchanged. This uploaded source guide contains code sections for only some of the supplied questions; the searchable index above does not mean a missing JSP/EJB/JPA solution has been added.
+
+### 0.6 Common errors
+| Error | Solution |
+|---|---|
+| `ClassNotFoundException: com.mysql.jdbc.Driver` | MySQL JDBC Driver library add karo (0.5 step 3) |
+| HTTP 404 | Project name / URL pattern check karo; project **Clean and Build** karo |
+| Port 8080 already in use | Doosra server band karo, ya GlassFish restart karo |
+| `Access denied for user 'root'` | Code me MySQL ka sahi password daalo |
+| `Communications link failure` | XAMPP me MySQL start karo |
+
+---
+
+# PART A — Servlets (Q.1 – A)
+
+> Har servlet ke top par ye imports aur `package p1;` rahega. Servlet file: `Source Packages → p1 → <Name>.java`.
+
+---
+
+### Q1-### Q1-1 & Q1-13. Create a simple calculator application using a Servlet. (Q1-13: Create a Servlet application that accepts two numbers and an arithmetic operation from an HTML form, calculates the result and displays it.)
+**Project:** `CalcApp`  |  **File:** `Source Packages → p1 → CalcServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/CalcServlet")
+public class CalcServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<form method='post'>No1: <input name='a'><br>No2: <input name='b'><br>"
+            + "Operation: <select name='op'><option>+</option><option>-</option><option>*</option>"
+            + "<option>/</option><option>%</option></select><br><input type='submit' value='Calculate'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        double a = Double.parseDouble(req.getParameter("a"));
+        double b = Double.parseDouble(req.getParameter("b"));
+        String op = req.getParameter("op");
+        double r = 0;
+        if (op.equals("+")) r = a + b;
+        else if (op.equals("-")) r = a - b;
+        else if (op.equals("*")) r = a * b;
+        else if (op.equals("/")) r = a / b;
+        else r = a % b;
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Result: " + a + " " + op + " " + b + " = " + r + "</h3>");
+    }
+}
+```
+**URL:** `http://localhost:8080/CalcApp/CalcServlet`
+
+**Output:**
+```
+No1: [10]  No2: [5]  Operation: [+]  [Calculate]
+        ↓
+Result: 10.0 + 5.0 = 15.0
+```
+
+---
+### Q1-### Q1-2. Develop a basic calculator using ServletInputStream and ServletOutputStream to perform addition, subtraction, multiplication, division and modulus.
+**Project:** `StreamCalc`  |  **File:** `Source Packages → p1 → StreamCalcServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/StreamCalcServlet")
+public class StreamCalcServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<form method='post'>A: <input name='a'> B: <input name='b'> "
+            + "<select name='op'><option value='add'>Addition</option><option value='sub'>Subtraction</option>"
+            + "<option value='mul'>Multiplication</option><option value='div'>Division</option>"
+            + "<option value='mod'>Modulus</option></select> <input type='submit'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        ServletInputStream in = req.getInputStream();
+        byte[] buf = new byte[1024];
+        int n = in.read(buf);
+        String body = new String(buf, 0, n);               // example: a=10&b=5&op=add
+        String[] p = body.split("&");
+        double a = Double.parseDouble(p[0].split("=")[1]);
+        double b = Double.parseDouble(p[1].split("=")[1]);
+        String op = p[2].split("=")[1];
+        double r = 0;
+        if (op.equals("add")) r = a + b;
+        else if (op.equals("sub")) r = a - b;
+        else if (op.equals("mul")) r = a * b;
+        else if (op.equals("div")) r = a / b;
+        else r = a % b;
+        res.setContentType("text/html");
+        ServletOutputStream out = res.getOutputStream();
+        out.println("<h3>" + op + " of " + a + " and " + b + " = " + r + "</h3>");
+    }
+}
+```
+**URL:** `http://localhost:8080/StreamCalc/StreamCalcServlet`
+
+**Output:**
+```
+A: [20]  B: [6]  [Modulus]  [Submit]
+        ↓
+mod of 20.0 and 6.0 = 2.0
+```
+
+---
+### Q1-### Q1-3. Create a Servlet-based login page that displays “Hello” or “Hello [username]” for valid credentials and “login failed” for invalid credentials.
+**Project:** `LoginApp`  |  **File:** `Source Packages → p1 → LoginServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<form method='post'>Username: <input name='u'><br>"
+            + "Password: <input type='password' name='p'><br><input type='submit' value='Login'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        String u = req.getParameter("u"), p = req.getParameter("p");
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        if (u.equals("admin") && p.equals("admin123"))
+            out.println("<h2>Hello " + u + "</h2>");      // sirf "Hello" chahiye to: out.println("<h2>Hello</h2>");
+        else
+            out.println("<h2>login failed</h2>");
+    }
+}
+```
+**URL:** `http://localhost:8080/LoginApp/LoginServlet`
+
+**Output:**
+```
+admin / admin123  →  Hello admin
+koi aur           →  login failed
+```
+
+---
+### Q1-### Q1-4. Create a Servlet-based login application for an online examination portal.
+**Project:** `ExamPortal`  |  **File:** `Source Packages → p1 → ExamLoginServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/ExamLoginServlet")
+public class ExamLoginServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h2>Online Examination Portal</h2><form method='post'>"
+            + "Student ID: <input name='id'><br>Password: <input type='password' name='pw'><br>"
+            + "<input type='submit' value='Login'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        String id = req.getParameter("id"), pw = req.getParameter("pw");
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        if (id.equals("student1") && pw.equals("exam123")) {
+            req.getSession().setAttribute("student", id);
+            out.println("<h2>Welcome " + id + " to Online Examination Portal</h2><a href='QuizServlet'>Start Exam</a>");
+        } else {
+            out.println("<h3>Invalid ID or Password</h3><a href='ExamLoginServlet'>Try again</a>");
+        }
+    }
+}
+```
+(`QuizServlet` Q1-12 ka hai; usko isi project me daalo to "Start Exam" link chalega.)
+
+**URL:** `http://localhost:8080/ExamPortal/ExamLoginServlet`
+
+**Output:**
+```
+student1 / exam123  →  Welcome student1 to Online Examination Portal   [Start Exam]
+galat details       →  Invalid ID or Password
+```
+
+---
+### Q1-### Q1-5. Create a registration Servlet using JDBC to accept username, password, email and country from an HTML form and store the details in a database.
+**Project:** `RegisterApp`  |  **Needs:** MySQL + `users` table (Setup 0.5)
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+**File:** `Source Packages → p1 → RegisterServlet.java`
+
+```java
+package p1;
+import java.io.*;
+import java.sql.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/RegisterServlet")
+public class RegisterServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Registration</h3><form method='post'>"
+            + "Username: <input name='username'><br>Password: <input type='password' name='password'><br>"
+            + "Email: <input name='email'><br>Country: <select name='country'><option>India</option>"
+            + "<option>USA</option><option>UK</option></select><br><input type='submit' value='Register'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/exam", "root", "");
+            PreparedStatement ps = con.prepareStatement("insert into users values(?,?,?,?)");
+            ps.setString(1, req.getParameter("username"));
+            ps.setString(2, req.getParameter("password"));
+            ps.setString(3, req.getParameter("email"));
+            ps.setString(4, req.getParameter("country"));
+            int i = ps.executeUpdate();
+            out.println(i > 0 ? "<h3>Registration successful</h3>" : "<h3>Registration failed</h3>");
+            con.close();
+        } catch (Exception e) {
+            out.println(e);
+        }
+    }
+}
+```
+**URL:** `http://localhost:8080/RegisterApp/RegisterServlet`
+
+**Output:**
+```
+Registration successful
+(phpMyAdmin → exam → users me nayi row dikhegi)
+```
+
+---
+### Q1-### Q1-19. Create a Servlet application for a bookshop that accepts customer details and stores them in a database using JDBC.
+**Project:** `BookshopApp`  |  **File:** `RegisterServlet.java` copy karke `BookshopServlet.java` banao aur ye changes karo:
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+| Jagah | Change |
+|---|---|
+| Class / URL | `BookshopServlet` / `@WebServlet("/BookshopServlet")` |
+| Form fields | `cname`, `address`, `phone`, `bookname` (4 input boxes) |
+| SQL | `insert into customers values(?,?,?,?)` |
+| setString | `req.getParameter("cname")`, `"address"`, `"phone"`, `"bookname"` |
+| Message | `Customer details saved` |
+
+**Output:** `Customer details saved` aur `customers` table me row.
+
+---
+### Q1-### Q1-6. Create a Servlet using RequestDispatcher to validate a password and forward the user to a Welcome Servlet when valid; otherwise, display an error or remain on the index page.
+**Project:** `DispatchApp`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Create the page(s) under `Web Pages` using `Right-click Web Pages → New → HTML`; use the exact filename listed above.
+3. Create each Java Servlet under `Source Packages → p1` using `Right-click p1 → New → Servlet`; use the exact class names listed above and paste the corresponding code below.
+4. Save all files, then right-click the starting HTML page under `Web Pages → Run File`.
+
+**Files:** `Web Pages → index.html`, `p1 → CheckServlet.java`, `p1 → WelcomeServlet.java`
+
+**index.html**
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<form action="CheckServlet" method="post">
+    User: <input name="user"><br>
+    Password: <input type="password" name="pass"><br>
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>
+```
+
+**CheckServlet.java**
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/CheckServlet")
+public class CheckServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        if (req.getParameter("pass").equals("admin123")) {
+            req.getRequestDispatcher("/WelcomeServlet").forward(req, res);
+        } else {
+            res.getWriter().println("<b style='color:red'>Invalid password!</b>");
+            req.getRequestDispatcher("/index.html").include(req, res);
+        }
+    }
+}
+```
+
+**WelcomeServlet.java**
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/WelcomeServlet")
+public class WelcomeServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h2>Welcome, " + req.getParameter("user") + "!</h2>");
+    }
+}
+```
+**Run:** `index.html` pe Run File. **URL:** `http://localhost:8080/DispatchApp/`
+
+**Output:**
+```
+pass = admin123  →  Welcome, Ravi!
+pass = galat     →  Invalid password!  (neeche login form wapas dikhta hai)
+```
+
+---
+### Q1-### Q1-18. Create a Servlet application for a college admission portal that validates an application and uses RequestDispatcher to forward it to a confirmation page.
+**Project:** `AdmissionApp`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Create the page(s) under `Web Pages` using `Right-click Web Pages → New → HTML`; use the exact filename listed above.
+3. Create each Java Servlet under `Source Packages → p1` using `Right-click p1 → New → Servlet`; use the exact class names listed above and paste the corresponding code below.
+4. Save all files, then right-click the starting HTML page under `Web Pages → Run File`.
+
+**Files:** `Web Pages → admission.html`, `p1 → AdmissionServlet.java`, `p1 → ConfirmServlet.java`
+
+**admission.html**
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<h3>College Admission Form</h3>
+<form action="AdmissionServlet" method="post">
+    Name: <input name="name"><br>
+    12th Percentage: <input name="per"><br>
+    <input type="submit" value="Apply">
+</form>
+</body>
+</html>
+```
+
+**AdmissionServlet.java**
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/AdmissionServlet")
+public class AdmissionServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        String name = req.getParameter("name");
+        boolean ok = false;
+        try {
+            double per = Double.parseDouble(req.getParameter("per"));
+            ok = !name.trim().equals("") && per >= 50;
+        } catch (Exception e) { }
+        if (ok) {
+            req.getRequestDispatcher("/ConfirmServlet").forward(req, res);
+        } else {
+            res.getWriter().println("<b style='color:red'>Invalid application (name required, percentage must be 50 or more)</b>");
+            req.getRequestDispatcher("/admission.html").include(req, res);
+        }
+    }
+}
+```
+
+**ConfirmServlet.java**
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/ConfirmServlet")
+public class ConfirmServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h2>Admission Confirmed</h2>Name: " + req.getParameter("name")
+            + "<br>Percentage: " + req.getParameter("per"));
+    }
+}
+```
+**Run:** `admission.html` pe Run File.
+
+**Output:**
+```
+Ravi, 72  →  Admission Confirmed / Name: Ravi / Percentage: 72
+Ravi, 40  →  Invalid application ... (form wapas)
+```
+
+---
+### Q1-### Q1-26. Create a Servlet application for a college event that uses RequestDispatcher to forward a valid registration to a confirmation page.
+**Project:** `EventApp`  |  Q1-18 ka hi code use karo, sirf ye badlo:
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+| Q1-18 me | Q1-26 me |
+|---|---|
+| `admission.html` | `event.html` (fields: `name`, `email`) |
+| `AdmissionServlet` | `EventServlet` |
+| `ConfirmServlet` | `EventConfirmServlet` |
+| validation: `per >= 50` wala try-block | `boolean ok = !name.trim().equals("") && req.getParameter("email").contains("@");` (try-catch hata do) |
+| message | `Event Registration Confirmed` + name + email |
+
+**Output:** valid email → `Event Registration Confirmed / Name: Ravi / Email: ravi@gmail.com`; galat email → error + form.
+
+---
+### Q1-### Q1-7. Create a Servlet that uses cookies to store and display the number of times a user has visited the application.
+**Project:** `CookieApp`  |  **File:** `p1 → VisitCountServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/VisitCountServlet")
+public class VisitCountServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        int count = 0;
+        Cookie[] cs = req.getCookies();
+        if (cs != null)
+            for (Cookie c : cs)
+                if (c.getName().equals("visits")) count = Integer.parseInt(c.getValue());
+        count++;
+        res.addCookie(new Cookie("visits", String.valueOf(count)));
+        res.setContentType("text/html");
+        res.getWriter().println("<h2>You have visited this page " + count + " time(s)</h2>");
+    }
+}
+```
+**URL:** `http://localhost:8080/CookieApp/VisitCountServlet` (browser refresh karo)
+
+**Output:**
+```
+1st load: You have visited this page 1 time(s)
+Refresh : You have visited this page 2 time(s)
+Refresh : You have visited this page 3 time(s)
+```
+
+---
+### Q1-### Q1-22. Create a Servlet application for a shopping website that uses cookies to remember a visitor's name on subsequent visits.
+**Project:** `ShopCookie`  |  **File:** `p1 → ShopCookieServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/ShopCookieServlet")
+public class ShopCookieServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        String name = req.getParameter("name");
+        if (name != null) {                                   // form submit hua
+            Cookie c = new Cookie("uname", name);
+            c.setMaxAge(60 * 60 * 24);
+            res.addCookie(c);
+            out.println("<h3>Hello " + name + ", your name is saved.</h3><a href='ShopCookieServlet'>Visit again</a>");
+            return;
+        }
+        String saved = null;
+        Cookie[] cs = req.getCookies();
+        if (cs != null)
+            for (Cookie c : cs)
+                if (c.getName().equals("uname")) saved = c.getValue();
+        if (saved != null)
+            out.println("<h2>Welcome back to the shop, " + saved + "!</h2>");
+        else
+            out.println("<form>Enter your name (no spaces): <input name='name'> <input type='submit'></form>");
+    }
+}
+```
+**URL:** `http://localhost:8080/ShopCookie/ShopCookieServlet`
+
+**Output:**
+```
+1st visit : form → naam daalo (Ravi) → "Hello Ravi, your name is saved."
+2nd visit : Welcome back to the shop, Ravi!
+```
+
+---
+### Q1-### Q1-8. Create a Servlet that demonstrates session creation and destruction and checks whether the user is visiting for the first time or has visited previously.
+**Project:** `SessionApp`  |  **File:** `p1 → SessionServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/SessionServlet")
+public class SessionServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        HttpSession s = req.getSession();                       // session create
+        if ("destroy".equals(req.getParameter("action"))) {
+            s.invalidate();                                     // session destroy
+            out.println("<h3>Session destroyed</h3><a href='SessionServlet'>Start again</a>");
+            return;
+        }
+        boolean first = s.isNew();
+        Integer c = (Integer) s.getAttribute("count");
+        c = (c == null) ? 1 : c + 1;
+        s.setAttribute("count", c);
+        out.println(first ? "<h3>Welcome! This is your FIRST visit.</h3>" : "<h3>Welcome back! Visit number " + c + "</h3>");
+        out.println("Session ID: " + s.getId() + "<br><a href='SessionServlet?action=destroy'>Destroy Session</a>");
+    }
+}
+```
+**URL:** `http://localhost:8080/SessionApp/SessionServlet`
+
+**Output:**
+```
+1st load : Welcome! This is your FIRST visit.
+Refresh  : Welcome back! Visit number 2
+Destroy  : Session destroyed   (phir load karo → dobara FIRST visit)
+```
+
+---
+### Q1-### Q1-20. Create a Servlet application for a parcel-tracking system that uses sessions to store and display customer tracking details.
+**Project:** `ParcelApp`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Create the page(s) under `Web Pages` using `Right-click Web Pages → New → HTML`; use the exact filename listed above.
+3. Create each Java Servlet under `Source Packages → p1` using `Right-click p1 → New → Servlet`; use the exact class names listed above and paste the corresponding code below.
+4. Save all files, then right-click the starting HTML page under `Web Pages → Run File`.
+
+**Files:** `Web Pages → parcel.html`, `p1 → ParcelSaveServlet.java`, `p1 → ParcelShowServlet.java`
+
+**parcel.html**
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Parcel Tracking</h3>
+<form action="ParcelSaveServlet" method="post">
+    Tracking ID: <input name="tid"><br>
+    Customer Name: <input name="cname"><br>
+    Status: <select name="status"><option>Booked</option><option>In Transit</option><option>Delivered</option></select><br>
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>
+```
+
+**ParcelSaveServlet.java**
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/ParcelSaveServlet")
+public class ParcelSaveServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        HttpSession s = req.getSession();
+        s.setAttribute("tid", req.getParameter("tid"));
+        s.setAttribute("cname", req.getParameter("cname"));
+        s.setAttribute("status", req.getParameter("status"));
+        res.setContentType("text/html");
+        res.getWriter().println("Details saved in session. <a href='ParcelShowServlet'>View Tracking Details</a>");
+    }
+}
+```
+
+**ParcelShowServlet.java**
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/ParcelShowServlet")
+public class ParcelShowServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        HttpSession s = req.getSession();
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Tracking Details</h3>Tracking ID: " + s.getAttribute("tid")
+            + "<br>Customer: " + s.getAttribute("cname") + "<br>Status: " + s.getAttribute("status"));
+    }
+}
+```
+**Run:** `parcel.html` pe Run File.
+
+**Output:**
+```
+Tracking Details
+Tracking ID: TRK1001
+Customer: Ravi
+Status: In Transit
+```
+
+---
+### Q1-### Q1-21 & Q1-42. Session me student details (Online Test Portal / Hostel Registration)
+Q1-20 ka code hi use karo, sirf ye names badlo:
+
+| | Q1-21 Online Test Portal | Q1-42 Hostel Registration |
+|---|---|---|
+| Project | `TestPortalApp` | `HostelApp` |
+| HTML | `test.html` | `hostel.html` |
+| Save servlet | `TestSaveServlet` | `HostelSaveServlet` |
+| Show servlet | `TestShowServlet` | `HostelShowServlet` |
+| Form fields / session keys | `sid`, `sname`, `course` | `sname`, `room`, `course` |
+| Heading | Student Details | Hostel Registration Confirmation |
+
+**Output (Q1-42):**
+```
+Hostel Registration Confirmation
+Name: Ravi
+Room: 204
+Course: BCA
+```
+
+---
+
+### Q1-### Q1-9. Create a Servlet application to upload and download files.
+**Project:** `FileApp`  |  Pehle C: drive me folder `C:\uploads` bana lo (code khud bhi bana deta hai).
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+**File:** `p1 → FileServlet.java`
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/FileServlet")
+@MultipartConfig
+public class FileServlet extends HttpServlet {
+    String dir = "C:/uploads";
+
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        String f = req.getParameter("file");
+        if (f != null) {                                         // DOWNLOAD
+            res.setContentType("application/octet-stream");
+            res.setHeader("Content-Disposition", "attachment; filename=\"" + f + "\"");
+            FileInputStream in = new FileInputStream(new File(dir, f));
+            OutputStream os = res.getOutputStream();
+            byte[] b = new byte[1024];
+            int n;
+            while ((n = in.read(b)) != -1) os.write(b, 0, n);
+            in.close();
+            return;
+        }
+        res.setContentType("text/html");                         // UPLOAD form + file list
+        PrintWriter out = res.getWriter();
+        out.println("<h3>Upload File</h3><form method='post' enctype='multipart/form-data'>"
+            + "<input type='file' name='file'> <input type='submit' value='Upload'></form><h3>Download Files</h3>");
+        File[] list = new File(dir).listFiles();
+        if (list != null)
+            for (File x : list)
+                out.println("<a href='FileServlet?file=" + x.getName() + "'>" + x.getName() + "</a><br>");
+    }
+
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        Part p = req.getPart("file");
+        new File(dir).mkdirs();
+        p.write(dir + "/" + p.getSubmittedFileName());
+        res.sendRedirect("FileServlet");
+    }
+}
+```
+**URL:** `http://localhost:8080/FileApp/FileServlet`
+
+**Output:**
+```
+Upload File  [Choose File] [Upload]
+Download Files
+ notes.pdf      ← click karo to file download hoti hai
+ photo.jpg
+```
+
+---
+### Q1-### Q1-24. Create a Servlet application for a college notice board that allows an administrator to upload PDF notices and students to download them.
+**Project:** `NoticeApp`  |  Q1-9 ka code copy karke `NoticeServlet.java` banao (`@WebServlet("/NoticeServlet")`, class name `NoticeServlet`) aur ye 3 changes karo:
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+1. `String dir = "C:/notices";`
+2. `doPost` ke andar `Part p = ...` ke baad ye check lagao:
+```java
+String fn = p.getSubmittedFileName();
+if (!fn.toLowerCase().endsWith(".pdf")) { res.setContentType("text/html"); res.getWriter().println("Only PDF allowed. <a href='NoticeServlet'>Back</a>"); return; }
+```
+3. Headings: `Admin: Upload PDF Notice` aur `Student: Download Notices`; `sendRedirect("NoticeServlet")` aur links me bhi `NoticeServlet`.
+
+**Output:** Admin PDF upload karta hai → list me `exam_timetable.pdf` dikhta hai → student click karke download karta hai. `.txt` upload karne par `Only PDF allowed`.
+
+---
+### Q1-### Q1-10. Create a Servlet application demonstrating non-blocking read operations.
+**Project:** `NonBlockApp`  |  **File:** `p1 → NonBlockServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet(urlPatterns = "/NonBlockServlet", asyncSupported = true)
+public class NonBlockServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<form method='post'>Message: <input name='msg'> <input type='submit'></form>");
+    }
+    protected void doPost(HttpServletRequest req, final HttpServletResponse res) throws ServletException, IOException {
+        final AsyncContext ac = req.startAsync();
+        final ServletInputStream in = req.getInputStream();
+        in.setReadListener(new ReadListener() {
+            StringBuilder sb = new StringBuilder();
+            public void onDataAvailable() throws IOException {
+                byte[] b = new byte[1024];
+                while (in.isReady() && !in.isFinished()) {
+                    int n = in.read(b);
+                    if (n > 0) sb.append(new String(b, 0, n));
+                }
+            }
+            public void onAllDataRead() throws IOException {
+                res.setContentType("text/html");
+                res.getWriter().println("<h3>Data received (non-blocking read): " + sb + "</h3>");
+                ac.complete();
+            }
+            public void onError(Throwable t) { ac.complete(); }
+        });
+    }
+}
+```
+**URL:** `http://localhost:8080/NonBlockApp/NonBlockServlet`
+
+**Output:**
+```
+Message: [hello]  [Submit]
+        ↓
+Data received (non-blocking read): msg=hello
+```
+
+---
+### Q1-### Q1-11. Develop a Servlet-based question-and-answer application that retrieves questions from a database.
+**Project:** `QAApp`  |  **Needs:** `qa` table  |  **File:** `p1 → QAServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import java.sql.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/QAServlet")
+public class QAServlet extends HttpServlet {
+    Connection getCon() throws Exception {
+        Class.forName("com.mysql.jdbc.Driver");
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/exam", "root", "");
+    }
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        try {
+            Connection con = getCon();
+            ResultSet rs = con.createStatement().executeQuery("select * from qa");
+            out.println("<h3>Answer the questions</h3><form method='post'>");
+            while (rs.next())
+                out.println(rs.getInt(1) + ". " + rs.getString(2) + "<br><input name='q" + rs.getInt(1) + "'><br><br>");
+            out.println("<input type='submit' value='Submit'></form>");
+            con.close();
+        } catch (Exception e) { out.println(e); }
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        try {
+            Connection con = getCon();
+            ResultSet rs = con.createStatement().executeQuery("select * from qa");
+            int total = 0, score = 0;
+            while (rs.next()) {
+                total++;
+                String given = req.getParameter("q" + rs.getInt(1));
+                if (given != null && given.trim().equalsIgnoreCase(rs.getString(3))) score++;
+            }
+            out.println("<h2>Your score: " + score + " / " + total + "</h2>");
+            con.close();
+        } catch (Exception e) { out.println(e); }
+    }
+}
+```
+**URL:** `http://localhost:8080/QAApp/QAServlet`
+
+**Output:**
+```
+1. Capital of India?          [Delhi]
+2. Java was developed by?     [Sun]
+3. Full form of JSP?          [Java Server Pages]
+[Submit]  →  Your score: 3 / 3
+```
+
+---
+### Q1-### Q1-12. Develop a web-based multiple-choice quiz with at least five questions, four options per question and one selectable answer per question. Display the number of correct and incorrect answers after submission.
+**Project:** `QuizApp`  |  **File:** `p1 → QuizServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/QuizServlet")
+public class QuizServlet extends HttpServlet {
+    String[] q = {"Capital of India?", "2 + 2 = ?", "Java was developed by?", "Which is NOT a servlet method?", "HTML stands for?"};
+    String[][] o = {
+        {"Mumbai", "Delhi", "Pune", "Kolkata"},
+        {"3", "4", "5", "6"},
+        {"Microsoft", "Sun Microsystems", "Apple", "Google"},
+        {"init", "service", "destroy", "run"},
+        {"Hyper Text Markup Language", "High Text Language", "Hyper Tool Language", "None"}};
+    int[] ans = {1, 1, 1, 3, 0};                      // correct option index (0 se start)
+
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        out.println("<h2>Quiz</h2><form method='post'>");
+        for (int i = 0; i < q.length; i++) {
+            out.println("<b>Q" + (i + 1) + ". " + q[i] + "</b><br>");
+            for (int j = 0; j < 4; j++)
+                out.println("<input type='radio' name='q" + i + "' value='" + j + "'>" + o[i][j] + "<br>");
+            out.println("<br>");
+        }
+        out.println("<input type='submit' value='Submit Quiz'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        int correct = 0;
+        for (int i = 0; i < q.length; i++) {
+            String v = req.getParameter("q" + i);
+            if (v != null && Integer.parseInt(v) == ans[i]) correct++;
+        }
+        res.setContentType("text/html");
+        res.getWriter().println("<h2>Result</h2>Correct answers: " + correct + "<br>Incorrect answers: " + (q.length - correct));
+    }
+}
+```
+**URL:** `http://localhost:8080/QuizApp/QuizServlet`
+
+**Output:**
+```
+Result
+Correct answers: 4
+Incorrect answers: 1
+```
+
+---
+### Q1-### Q1-14. Create a Servlet application demonstrating simple input validation.
+**Project:** `ValidateApp`  |  **File:** `p1 → ValidateServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/ValidateServlet")
+public class ValidateServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<form method='post'>Name: <input name='name'><br>Age: <input name='age'><br>"
+            + "Email: <input name='email'><br><input type='submit'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        String name = req.getParameter("name"), email = req.getParameter("email");
+        String err = "";
+        if (name == null || name.trim().equals("")) err += "Name is required<br>";
+        try {
+            int age = Integer.parseInt(req.getParameter("age"));
+            if (age < 1 || age > 100) err += "Age must be between 1 and 100<br>";
+        } catch (Exception e) { err += "Age must be a number<br>"; }
+        if (email == null || !email.contains("@")) err += "Email is invalid<br>";
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        if (err.equals("")) out.println("<h3>All inputs are valid. Welcome " + name + "!</h3>");
+        else out.println("<font color='red'>" + err + "</font><a href='ValidateServlet'>Back</a>");
+    }
+}
+```
+**URL:** `http://localhost:8080/ValidateApp/ValidateServlet`
+
+**Output:**
+```
+Name="", Age=abc, Email=xyz  →  Name is required / Age must be a number / Email is invalid
+Ravi, 21, ravi@gmail.com     →  All inputs are valid. Welcome Ravi!
+```
+
+---
+### Q1-### Q1-15. Create a simple HTML form that submits a user's name to a Servlet and displays a welcome message containing the name.
+**Project:** `WelcomeApp`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Create the page(s) under `Web Pages` using `Right-click Web Pages → New → HTML`; use the exact filename listed above.
+3. Create each Java Servlet under `Source Packages → p1` using `Right-click p1 → New → Servlet`; use the exact class names listed above and paste the corresponding code below.
+4. Save all files, then right-click the starting HTML page under `Web Pages → Run File`.
+
+**Files:** `Web Pages → index.html`, `p1 → HelloServlet.java`
+
+**index.html**
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<form action="HelloServlet" method="post">
+    Enter your name: <input name="name">
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+```
+
+**HelloServlet.java**
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/HelloServlet")
+public class HelloServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h2>Welcome, " + req.getParameter("name") + "!</h2>");
+    }
+}
+```
+**Run:** `index.html` pe Run File.
+
+**Output:**
+```
+Enter your name: [Ravi] [Submit]
+        ↓
+Welcome, Ravi!
+```
+
+---
+### Q1-### Q1-16. Create a Servlet application for a stationery shop that accepts the prices of two items and displays their sum, difference, product and division.
+**Project:** `StationeryApp`  |  **File:** `p1 → StationeryServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/StationeryServlet")
+public class StationeryServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Stationery Shop</h3><form method='post'>Price of Item 1 (Pen): <input name='p1'><br>"
+            + "Price of Item 2 (Notebook): <input name='p2'><br><input type='submit'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        double a = Double.parseDouble(req.getParameter("p1"));
+        double b = Double.parseDouble(req.getParameter("p2"));
+        res.setContentType("text/html");
+        res.getWriter().println("Sum = " + (a + b) + "<br>Difference = " + (a - b)
+            + "<br>Product = " + (a * b) + "<br>Division = " + (a / b));
+    }
+}
+```
+**URL:** `http://localhost:8080/StationeryApp/StationeryServlet`
+
+**Output (10 aur 40):**
+```
+Sum = 50.0
+Difference = -30.0
+Product = 400.0
+Division = 0.25
+```
+
+---
+### Q1-### Q1-17. Create a Servlet application for a canteen that accepts the prices of two food items and displays their total cost.
+**Project:** `CanteenApp`  |  **File:** `p1 → CanteenServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/CanteenServlet")
+public class CanteenServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>College Canteen</h3><form method='post'>Price of Food 1: <input name='f1'><br>"
+            + "Price of Food 2: <input name='f2'><br><input type='submit' value='Total'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        double a = Double.parseDouble(req.getParameter("f1"));
+        double b = Double.parseDouble(req.getParameter("f2"));
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Total Cost = Rs. " + (a + b) + "</h3>");
+    }
+}
+```
+**Output (25 aur 40):** `Total Cost = Rs. 65.0`
+
+---
+### Q1-### Q1-40. Develop a Servlet application for a bakery that accepts cake quantity and price and calculates the total bill.
+**Project:** `BakeryApp`  |  **File:** `p1 → BakeryServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/BakeryServlet")
+public class BakeryServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Bakery</h3><form method='post'>Cake Quantity: <input name='qty'><br>"
+            + "Price per Cake: <input name='price'><br><input type='submit' value='Calculate Bill'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        int qty = Integer.parseInt(req.getParameter("qty"));
+        double price = Double.parseDouble(req.getParameter("price"));
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Total Bill = " + qty + " x " + price + " = Rs. " + (qty * price) + "</h3>");
+    }
+}
+```
+**Output (3 cakes × 450):** `Total Bill = 3 x 450.0 = Rs. 1350.0`
+
+---
+### Q1-### Q1-41. Create a Servlet application for a mobile shop that accepts mobile price and discount percentage and calculates the final price.
+**Project:** `MobileShopApp`  |  **File:** `p1 → MobileShopServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/MobileShopServlet")
+public class MobileShopServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Mobile Shop</h3><form method='post'>Mobile Price: <input name='price'><br>"
+            + "Discount %: <input name='dis'><br><input type='submit' value='Final Price'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        double price = Double.parseDouble(req.getParameter("price"));
+        double dis = Double.parseDouble(req.getParameter("dis"));
+        double discount = price * dis / 100;
+        res.setContentType("text/html");
+        res.getWriter().println("Price: " + price + "<br>Discount: " + discount + "<br><h3>Final Price = Rs. " + (price - discount) + "</h3>");
+    }
+}
+```
+**Output (20000, 10%):**
+```
+Price: 20000.0
+Discount: 2000.0
+Final Price = Rs. 18000.0
+```
+
+---
+### Q1-### Q1-23. Create a Servlet application that calculates a water bill based on units consumed.
+**Rate:** pehle 100 units ₹5/unit, 101–200 units ₹7/unit, 200 se upar ₹10/unit
+**Project:** `WaterBillApp`  |  **File:** `p1 → WaterBillServlet.java`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Under `Source Packages`, create package `p1` if it does not exist: `Right-click Source Packages → New → Java Package → p1`.
+3. Create the Java file at the exact path shown above (`Source Packages → p1 → <ClassName>.java`), paste the code below, and save.
+4. Right-click the Servlet file → `Run File`; if asked for a Servlet execution URI, enter the URL pattern from its `@WebServlet` annotation.
+
+
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/WaterBillServlet")
+public class WaterBillServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Water Bill</h3><form method='post'>Units consumed: <input name='units'> <input type='submit'></form>");
+    }
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        int u = Integer.parseInt(req.getParameter("units"));
+        double bill;
+        if (u <= 100) bill = u * 5;
+        else if (u <= 200) bill = 500 + (u - 100) * 7;
+        else bill = 500 + 700 + (u - 200) * 10;
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Units: " + u + "<br>Water Bill = Rs. " + bill + "</h3>");
+    }
+}
+```
+**Output (250 units):** `Units: 250` / `Water Bill = Rs. 1700.0`
+
+---
+### Q1-### Q1-25. Create a Servlet application for a library that accepts book details and displays the submitted information on a separate page.
+**Project:** `LibraryApp`
+
+**Steps and paths:**
+1. Create the project using `File → New Project → Java Web → Web Application`; use the project name shown above, select GlassFish Server 4.0 / Java EE 7 Web, then click `Finish`.
+2. Create the page(s) under `Web Pages` using `Right-click Web Pages → New → HTML`; use the exact filename listed above.
+3. Create each Java Servlet under `Source Packages → p1` using `Right-click p1 → New → Servlet`; use the exact class names listed above and paste the corresponding code below.
+4. Save all files, then right-click the starting HTML page under `Web Pages → Run File`.
+
+**Files:** `Web Pages → library.html`, `p1 → LibraryServlet.java`
+
+**library.html**
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Add Book</h3>
+<form action="LibraryServlet" method="post">
+    Title: <input name="title"><br>
+    Author: <input name="author"><br>
+    ISBN: <input name="isbn"><br>
+    Price: <input name="price"><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+```
+
+**LibraryServlet.java**
+```java
+package p1;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
+
+@WebServlet("/LibraryServlet")
+public class LibraryServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        res.setContentType("text/html");
+        res.getWriter().println("<h3>Submitted Book Details</h3><table border='1'>"
+            + "<tr><td>Title</td><td>" + req.getParameter("title") + "</td></tr>"
+            + "<tr><td>Author</td><td>" + req.getParameter("author") + "</td></tr>"
+            + "<tr><td>ISBN</td><td>" + req.getParameter("isbn") + "</td></tr>"
+            + "<tr><td>Price</td><td>" + req.getParameter("price") + "</td></tr></table>");
+    }
+}
+```
+**Run:** `library.html` pe Run File.
+
+**Output:**
+```
+Submitted Book Details
+| Title  | Java Complete Reference |
+| Author | Herbert Schildt         |
+| ISBN   | 978-1260440232          |
+| Price  | 650                     |
+```
+
+---
